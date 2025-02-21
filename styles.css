@@ -1,0 +1,110 @@
+body{
+    background-color: black;
+    text-align: center;
+    color:white;
+}
+.body{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.title{
+    color:rgb(255, 251, 0);
+}
+.subtitle{
+    color:rgb(43, 190, 190)
+}
+.heading{
+    background-image: linear-gradient(to right , orange , green);
+}
+.content{
+    padding-top:5vh;
+}
+.msg{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5vh;
+    color:orange;
+}
+input{
+    --bg : linear-gradient(to right , red , blue);
+    margin-top:10vh;
+    background-image: linear-gradient(to right , yellow , orange);
+    transition-property: all;
+    transition-duration: 1.5s;
+    width:20vw;
+    height: 10vh;
+    border-radius: 5%;
+    border: solid rgb(19, 87, 150) 2px;
+}
+.hr{
+    width:100%;
+    height: 3px;
+    background: linear-gradient(to left , red , blue);
+}
+.add button{
+    margin-top:2vh;
+    padding:1px;
+    background: linear-gradient(to left , red , blue);
+    color:white;
+    width:6vw;
+    height:5vh;
+    box-shadow: 1px 1px 7px 1px rgb(94, 3, 94);
+}
+.clear button{
+    margin-top:2vh;
+    padding:1px;
+    background: linear-gradient(to left , red , blue);
+    color:white;
+    width:6vw;
+    height:5vh;
+    box-shadow: 1px 1px 7px 1px rgb(94, 3, 94);
+}
+.clear button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.add button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.add button::after{
+    content: '';
+    background: linear-gradient(to right , orange , green);
+    transition: all;
+    position:absolute;
+    left:0;
+    top:0;
+    color:white;
+    transition-duration: 1s;
+    width:0vw;
+    height: 5vh;
+}
+.add button:hover::after{
+    content:'Add movie';
+    width:6vw;
+}
+input:hover{
+    transform: scale(1.1);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.list{
+    margin-left: 30vw;
+    margin-right:30vw;
+    margin-top:5vh;
+    font-size:min(3vw , 5vh);
+    color:rgb(163, 13, 163);
+}
+li{
+    color:orange;
+    font-size: min(5vw , 8vh);
+}
+li:hover{
+    color:white;
+    cursor:pointer;
+    transform: scale(1.1);
+    text-decoration: line-through;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+        <title>Favourite movies</title>
+    </head>
+    <body>
+        <div class="body">
+            <div class="heading">
+                <div class="title"><h1>Favourite Movies App</h1></div>
+                <div class="subtitle"><h2>Add , Edit the list of your Favourite movies</h2> </div>
+            </div>
+            <div class="hr"></div>
+            <div class="content">
+                <div class="msg">Enter the movie you wish to add</div>
+                <div class="form">
+                    <input type="text" name="movie" placeholder="Enter the full name of movie">
+                    <div class="add" onclick="add()"><button>Add movie</button></div>
+                    <div class="clear" onclick="cl()"> <button>Clear All</button></div>
+                </div>
+                <div class="list">
+                    <div id="count">
+                        Total Movies in the list: <h3 id="num">0</h3>
+                    </div>
+                    <div class="Elements" id="li">
+                        <p>No movies selected so far!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
